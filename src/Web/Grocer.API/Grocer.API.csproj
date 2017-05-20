@@ -3,6 +3,8 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp1.1</TargetFramework>
     <PackageTargetFallback>portable-net45+win8</PackageTargetFallback>
+    <ApplicationInsightsResourceId>/subscriptions/e09d5887-e733-44ac-9f3f-5b5319ae7b75/resourcegroups/grocer-rg/providers/microsoft.insights/components/grocer-api</ApplicationInsightsResourceId>
+    <ApplicationInsightsAnnotationResourceId>/subscriptions/e09d5887-e733-44ac-9f3f-5b5319ae7b75/resourcegroups/grocer-rg/providers/microsoft.insights/components/grocer-api</ApplicationInsightsAnnotationResourceId>
   </PropertyGroup>
 
   <ItemGroup>
@@ -27,6 +29,9 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Grocer.Data\Grocer.Data.csproj" />
     <ProjectReference Include="..\..\Grocer.Models\Grocer.Models.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services" />
   </ItemGroup>
 
 </Project>
